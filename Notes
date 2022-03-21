@@ -1,0 +1,36 @@
+In this assessment I was tasked with the following tasks:
+ 
+ Your Tasks
+- Add a 'Total' line to the receipt. This should be the full price we should charge the customer.
+- Make the receipt print items in the order that they were scanned
+- In some branches of the store, customers want the receipt to show the price first on each line. Without changing the IShoppingCart interface, add a way to support this which allows for other formatting options in the future.
+- One limitation of the codebase is that every time a change is made, many of the tests need updating. Update or replace the test suite to extend coverage and limit the number of tests which need updating when changes are introduced.
+- Improve the solution & tests. There are no rules/limitations other than conforming to the IShoppingCart interface - go crazy.
+
+I feel that i was successful in implementing 3 of the 5 tasks I was asked to complete, Adding a "Total" Line , printing the receipt in order of the items scanned and switch the print display from price afte to price before or vice versa.
+
+First Steps:
+
+My initial approach after recieving the assessment was to reformat the code and read over each class, this took around 30 minutes to reformat and understand the code and an additional 10 mins to configure gradle correctly.
+
+#TIME TO COMPLETE Task 1 - 30 Minutes
+The first tasked i approached was to add a total line i achieved this by getting the item and its price, it was then divided my 100 to get the pirce in euros and then multiplied by the quantity of the item.
+Each price was then added to the totalP variable to get the total Price, this is later printed at the bottom of the printReceipt method.
+
+#TIME TO COMPLETE Task 2 - 60 Minutes
+After some research i had discovered through the oracle documentation tha linked hash maps will retain the retention order of the items inserted into the map, this made it a lot easier as i would just have to change the data structure to an LinkedHashMap as opposed to creating a new data structure to get the order of the items in my map.
+
+#TIME TO COMPLETE Task 3 - 30 Minutes
+For task 3 I decided to use ENUMs to determine between price before and price after. I then pass the enum as a parameter to the printReceipt method.
+
+TOTAL TIME TO COMPLETE : 2 Hour 30 Min
+
+OVERALL THOUGHTS:
+I am thankful for this oppurtunity, and i feel i performed well, unfortunately i was unable to complete the last 2 tasks of the assessment as i was unsure how to approach it and felt as i was under time constraint to complete the assessment as a whole.
+
+If i were to have more time, i would try to add a test for the total price line, and tests for the different price display types.
+
+
+
+
+
